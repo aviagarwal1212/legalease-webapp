@@ -69,8 +69,8 @@
                     </div>
                     <div class="card border-warning mb-2" style="width: 100%;" v-for="topic in anomalousTopics" :key="topic.id">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-transform: capitalize;">Anomalous Topics</h5>
-                            <h6 class="card-subtitle text-warning">{{topic.data}}</h6>
+                            <h5 class="card-title text-warning">Anomalous Topics</h5>
+                            <p class="card-text">{{topic.data}}</p>
                         </div>
                     </div>
                     <div class="card border-danger mb-2" style="width: 100%;" v-for="clauses in anomalousClauses" :key="clauses.id">
