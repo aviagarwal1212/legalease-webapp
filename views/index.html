@@ -48,10 +48,10 @@
                 </div>
                 <div id="left-container-button">
                     <button class="btn btn-primary" v-on:click="readTextField()" v-if="intervalID == null">
-                        Process!
+                        Process
                     </button>
                     <button class="btn btn-primary" disabled v-else>
-                        Processing!
+                        Processing
                     </button>
                 </div>
             </div>
@@ -69,13 +69,13 @@
                     </div>
                     <div class="card border-warning mb-2" style="width: 100%;" v-for="topic in anomalousTopics" :key="topic.id">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-transform: capitalize;">{{topic.data}}</h5>
-                            <h6 class="card-subtitle text-warning">Anomaly</h6>
+                            <h5 class="card-title" style="text-transform: capitalize;">Anomalous Topics</h5>
+                            <h6 class="card-subtitle text-warning">{{topic.data}}</h6>
                         </div>
                     </div>
                     <div class="card border-danger mb-2" style="width: 100%;" v-for="clauses in anomalousClauses" :key="clauses.id">
                         <div class="card-body">
-                            <h5 class="card-title text-danger">Anomalous Clause</h5>
+                            <h5 class="card-title text-danger">Anomalous Clauses</h5>
                             <p class="card-text">{{clauses.data}}</p>
                         </div>
                     </div>
